@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f808eb4706.js"></script>
-    <link rel="stylesheet" href="./style.css">
-    <title>Checkout</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f808eb4706.js"></script>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Checkout</title>
 </head>
 <body>
   <!--popout design-->
   <div id="popup">
-    <img src="./images/tick.png">
+    <img src="./images/tick.png" alt="a tick image">
     <div>
       <h1>Order Confirmed!</h1>
       <p>Expect delivery of your order on <span id="orderDate"></span></p>
@@ -23,7 +28,7 @@
   <!--nav bar-->
   <nav id="navbar">
     <div>
-      <img id="logo" src="./images/Green and White Modern Medical Logo.png" alt="logo">
+      <img id="logo" src="./images/logo.png" alt="logo">
     </div>
     <div id="contactusdiv">
       <a>Contact Us</a>
@@ -32,31 +37,31 @@
   </nav>  
   <section id="checkoutsection">
     <div id="checkoutdetails">
-      <h1>Checkout</h1>
-      <form id="userdetails">
+      <h2>Checkout</h2>
+      <form id="userdetails" action="#">
         <div class="info">
           <label for="name">Full Name</label>
-          <input type="text" name="name" placeholder="name" required>
+          <input type="text" id="name" name="name" placeholder="name" required>
         </div>
         <div class="info">
           <label for="phone">Phone Number</label>
-          <input type="text" name="phone" placeholder="number" required>
+          <input type="text" id="phone" name="phone" placeholder="number" required>
         </div>
         <div class="info">
           <label for="address">Address</label>
-          <input type="text" name="address" placeholder="address" required>
+          <input type="text" id="address" name="address" placeholder="address" required>
         </div>
         <div class="info">
           <label for="country">Country</label>
           <select name="country" required>
-            <option>Choose...</option>
+            <option value="">Choose...</option>
             <option>Sri Lanka</option>
           </select>
         </div>
         <div class="info">
           <label for="city">City</label>
           <select name="city" required>
-            <option>Choose...</option>
+            <option value="">Choose...</option>
             <option>Kandy</option>
             <option>Colombo</option>
           </select>
@@ -64,7 +69,7 @@
         <div class="info">
           <label for="payment">Payment method</label>
           <div id="cashcarddiv">
-            <label for="cash">Cash</label>
+            <label for="cash" >Cash</label>
             <input type="radio" name="payment" value="cash" >
             <label for="card">Card</label>
             <input type="radio" name="payment" value="card">
@@ -72,19 +77,19 @@
         </div>
         <div class="info carddetails">
           <label for="cardName">Card Name</label>
-          <input type="text" name="cardName" placeholder="Card Name" required>
+          <input type="text" id="cardName" name="cardName" placeholder="Card Name">
         </div>
         <div class="info carddetails">
           <label for="cardNum">Card Number</label>
-          <input type="number" name="cardNum" placeholder="1111-2222-3333-4444" required>
+          <input type="number" id="cardNum" name="cardNum" placeholder="1111-2222-3333-4444">
         </div>
         <div class="info carddetails">
           <label for="expiaryDate">Expiary date</label>
-          <input type="text" name="expiaryDate" placeholder="01/25" required>
+          <input type="text" id="expiaryDate" name="expiaryDate" placeholder="01/25">
         </div>
         <div class="info carddetails">
           <label for="cvv">CVV</label>
-          <input type="number" name="cvv" placeholder="123" required>
+          <input type="number" id="cvv" name="cvv" placeholder="123">
         </div>
       </form>
       <div id="paydiv">
@@ -101,7 +106,7 @@
     </div>
     <!--Js rendered HTML goes here-->
     <div id="checkoutbox">
-      <h1>Products in <span>Cart</span></h1>
+      <h2>Products in <span>Cart</span></h2>
       <div class="heading">
         <span>Product</span>
         <span>Price</span>
@@ -123,24 +128,24 @@
       </div>
       <div class="col2">
         <ul class="menu">
-          <li><a>Home</a></li>
-          <li><a>Services</a></li>
-          <li><a>Doctors</a></li>
-          <li><a>Reservation</a></li>
-          <li><a>Pharmacy</a></li>
-          <li><a>About Us</a></li>
-          <li><a>contact Us</a></li>
+          <li>Home</li>
+          <li>Services</li>
+          <li>Doctors</li>
+          <li>Reservation</li>
+          <li>Pharmacy</li>
+          <li>About Us</li>
+          <li>contact Us</li>
         </ul>
         <p>Care Corner Hospital. Providing compassionate care in Colombo and Kandy. Your health is our priority.</p>
       </div>
-      <div class="col3">
+      <!-- <div class="col3">
         <h3>Newsletter</h3>
         <form>
           <i class="fa-regular fa-envelope"></i>
           <input type="email" placeholder="Enter your email id" required>
           <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
         </form>
-      </div>
+      </div> -->
     </div>
     <hr>
     <p class="copyright">&copy; 2024 Care Corner. All rights reserved.</p>

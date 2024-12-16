@@ -39,10 +39,10 @@ body{
     height: 30px;
     padding-left: 5px;
     color: var(--primary-color);
-    &:focus{
-        border: 3px solid var(--primary-color);
-        outline: none;
-    }
+}
+#searchbardiv input:focus{
+    border: 3px solid var(--primary-color);
+    outline: none;
 }
 #searchbardiv i{
     position: relative;
@@ -99,9 +99,9 @@ body{
     height: 350px;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
-    &:hover{
-        box-shadow: var(--primary-color) 1px 3px 8px;;
-    }
+}
+.itemcard:hover{
+    box-shadow: var(--primary-color) 1px 3px 8px;
 }
 .itemcard img{
     width: 250px;
@@ -126,12 +126,12 @@ body{
     height: 20px;
     width: 20px;
     cursor: pointer;
-    &:hover{
-        transform: scale(1.10);
-    }
-    &:active{
-        transform: scale(0.95);
-    }
+}
+.itemcard .quantitydiv button:hover{
+    transform: scale(1.10);
+}
+.itemcard .quantitydiv button:active{
+    transform: scale(0.95);
 }
 .itemcard .quantitydiv span{
     display: inline-block;
@@ -166,12 +166,12 @@ body{
     border: 2px solid var(--secondary-color);
     border-radius: 5px;
     cursor: pointer;
-    &:hover{
-        background-color: rgb(15, 38, 75);
-    }
-    &:active{
-        transform: scale(0.95);
-    }
+}
+#carttablesection table thead td button:hover{
+    background-color: rgb(15, 38, 75);
+}
+#carttablesection table thead td button:active{
+    transform: scale(0.95);
 }
 #carttablesection table tr th{
     text-align: left;
@@ -196,28 +196,119 @@ body{
     color: white;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    &:hover{
-        background-color: rgb(236, 97, 54);
-        transform: scale(1.05);
-    }
-    &:active{
-        transform: scale(0.95);
-    }
+}
+#buynow:hover{
+    background-color: rgb(236, 97, 54);
+    transform: scale(1.05);
+}
+#buynow:active{
+    transform: scale(0.95);
 }
 #buynow i{
     padding: 5px;
 }
 
-@media (max-width:480px){
+@media (max-width:1024px){
     #container{
         width: 90%;
-        margin: 30px auto;
+        margin: 40px auto;
+    }
+    #container h1 {
+        font-size: 30px;
+    }
+    #navbar{
+        grid-template-columns: 1fr 300px;
+    }
+    .categorySection{
+        padding: 5px 0 30px 30px ;
+        margin-bottom: 20px;
+    }
+    #searchbardiv input{
+        width: 250px;
+    }
+    .itemcard{
+        grid-template-rows: 1fr 50px 40px 40px;
+        width: 200px; 
+        height: 280px;
+    }
+    .itemcard img{
+        width: 160px;
+        height: 160px;
+    }
+    #carttablesection table{
+        min-width: 550px;
+        font-size: 16px;
+    }
+    #carttablesection table thead td button{
+        padding: 4px;
+        font-size: 14px;
+    }
+    #buynow{
+        padding: 7px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:768px){
+    #container{
+        width: 90%;
+        margin: 20px auto;
     }
     #container h1 {
         font-size: 25px;
     }
+    #navbar{
+        grid-template-columns: 1fr 200px;
+    }
     .categorySection{
-        padding: 5px 0 30px 30px ;
+        padding: 5px 0 30px 10px ;
+        margin-bottom: 10px;
+    }
+    .itemSection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #searchbardiv input{
+        width: 150px;
+    }
+    .itemcard{
+        grid-template-rows: 1fr 50px 40px 40px;
+        width: 200px; 
+        height: 280px;
+    }
+    .itemcard img{
+        width: 120px;
+        height: 120px;
+    }
+    #carttablesection table{
+        min-width: 500px;
+        font-size: 16px;
+    }
+    #carttablesection table thead td button{
+        padding: 2px;
+        font-size: 12px;
+    }
+    #buynow{
+        padding: 7px;
+        font-size: 14px;
+    }
+    #buynow i{
+        display: none;
+    }
+}
+
+@media (max-width:480px){
+    #container{
+        width: 95%;
+        margin: 30px auto;
+    }
+    #container h1 {
+        font-size: 20px;
+    }
+    #navbar{
+        grid-template-columns: 1fr 200px;
+    }
+    .categorySection{
+        padding: 5px 0 30px 10px ;
         margin-bottom: 10px;
     }
     .itemSection{
@@ -236,10 +327,15 @@ body{
         height: 120px;
     }
     #carttablesection table{
-        min-width: 380px;
+        min-width: 350px;
+        font-size: 16px;
     }
     #carttablesection table thead td button{
         padding: 2px;
+        font-size: 12px;
+    }
+    #buynow{
+        padding: 7px;
         font-size: 14px;
     }
     #buynow i{
@@ -264,11 +360,11 @@ body{
     padding: 10px;
     height: fit-content;
 }
-#checkoutbox h1{
+#checkoutbox h2{
     display: inline-block;
     border-bottom: 4px solid var(--primary-color);
 }
-#checkoutbox h1 span{
+#checkoutbox h2 span{
     color: var(--primary-color);
 }
 #checkoutbox .heading{
@@ -294,7 +390,7 @@ body{
 #checkoutdetails{
     padding: 15px;
 }
-#checkoutdetails h1{
+#checkoutdetails h2{
     display: inline-block;
     border-bottom: var(--primary-color) solid 4px;
     color: var(--secondary-color);
@@ -359,16 +455,16 @@ body{
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    &:hover{
-        background-color: var(--secondary-color);
-        transform: scale(1.02);
-    }
-    &:active{
-        transform: scale(0.98);
-    }
+}
+#paydiv button:hover{
+    background-color: var(--secondary-color);
+    transform: scale(1.02);
+}
+#paydiv button:active{
+    transform: scale(0.98);
 }
 
-@media (max-width:480px){
+@media (max-width:768px){
     #checkoutsection{
         grid-template-columns: 1fr;
         width: 90%;
@@ -377,10 +473,34 @@ body{
         margin-top: 30px;
     }
     #checkoutbox .heading{
-        grid-template-columns: 1fr 70px 75px 90px;
+        grid-template-columns: 1fr 70px 85px 90px;
     }
     .checkoutlist{
-        grid-template-columns: 1fr 70px 75px 85px;
+        grid-template-columns: 1fr 70px 85px 85px;
+    }
+}
+
+@media (max-width:480px){
+    #checkoutsection{
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+    #checkoutbox, #checkoutdetails{
+        padding: 0px;
+    }
+    #checkoutbox{
+        margin-top: 30px;
+    }
+    #checkoutbox .heading{
+        font-size: 15px;
+        grid-template-columns: 1fr 60px 70px 85px;
+    }
+    .checkoutlist{
+        font-size: 15px;
+        grid-template-columns: 1fr 70px 70px 85px;
+    }
+    #checkoutdetails{
+        padding: 5px;
     }
 }
 
@@ -433,19 +553,19 @@ body{
     color: white;
     cursor: pointer;
     box-shadow: var(--box-shadow);
-    &:hover{
-        background-color: var(--primary-color);
-        transform: scale(1.05);
-    }
-    &:active{
-        transform: scale(0.95);
-    }
+}
+#popup div button:hover{
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+#popup div button:active{
+    transform: scale(0.95);
 }
 
 @media (max-width:480px){
     #popup{
         width: 300px;
-        height: 350px;
+        height: 450px;
         left: 15%;
     }
     #popup img{

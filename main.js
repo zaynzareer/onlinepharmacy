@@ -34,7 +34,7 @@ const processitem = (data) => {
             itemcards.classList.add("itemcard");
             itemcards.setAttribute("data-id", medicine.id);
             itemcards.innerHTML = `
-            <img src=${medicine.image} alt="medicine image">
+            <img src=${medicine.image} alt="${medicine.name} medicine image">
             <div class="title">${medicine.name}</div>
             <div class="price">Rs. ${medicine.price}</div>
             <div class="quantitydiv">

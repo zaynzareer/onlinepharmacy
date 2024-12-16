@@ -55,13 +55,21 @@ function showCardDetails() {
 const payButton = document.getElementById("paybtn");
 const popup = document.getElementById("popup")
 const opacityitem = document.querySelector("#checkoutsection");
-payButton.addEventListener("click",displayMessage);
-function displayMessage(){
-  popup.style.top = "30%";
-  popup.style.transform = "scale(1)";
-  popup.style.display = "block";
-  opacityitem.style.opacity = "0.4";
-}
+
+payButton.addEventListener("click", displayPopup)
+
+function displayPopup() {
+  const form = document.getElementById('userdetails');
+  if (form.checkValidity()){
+    popup.style.top = "30%";
+    popup.style.transform = "scale(1)";
+    popup.style.display = "block";
+    opacityitem.style.opacity = "0.4";
+  } else {
+    alert('Please fill in all required fields.');
+  }
+};
+
 
 //date function
 const datetext = document.getElementById("orderDate")
