@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f808eb4706.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Checkout</title>
+</head>
+<body>
+  <!--popout design-->
+  <div id="popup">
+    <img src="./images/tick.png">
+    <div>
+      <h1>Order Confirmed!</h1>
+      <p>Expect delivery of your order on <span id="orderDate"></span></p>
+      <button onclick="location.href='./index.html'">Continue shopping</button>
+    </div>
+  </div>
+  <!--nav bar-->
+  <nav id="navbar">
+    <div>
+      <img id="logo" src="./images/Green and White Modern Medical Logo.png" alt="logo">
+    </div>
+    <div id="contactusdiv">
+      <a>Contact Us</a>
+      <i class="fa-solid fa-phone"></i>
+    </div>
+  </nav>  
+  <section id="checkoutsection">
+    <div id="checkoutdetails">
+      <h1>Checkout</h1>
+      <form id="userdetails">
+        <div class="info">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" placeholder="name" required>
+        </div>
+        <div class="info">
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" placeholder="number" required>
+        </div>
+        <div class="info">
+          <label for="address">Address</label>
+          <input type="text" name="address" placeholder="address" required>
+        </div>
+        <div class="info">
+          <label for="country">Country</label>
+          <select name="country" required>
+            <option>Choose...</option>
+            <option>Sri Lanka</option>
+          </select>
+        </div>
+        <div class="info">
+          <label for="city">City</label>
+          <select name="city" required>
+            <option>Choose...</option>
+            <option>Kandy</option>
+            <option>Colombo</option>
+          </select>
+        </div>
+        <div class="info">
+          <label for="payment">Payment method</label>
+          <div id="cashcarddiv">
+            <label for="cash">Cash</label>
+            <input type="radio" name="payment" value="cash" >
+            <label for="card">Card</label>
+            <input type="radio" name="payment" value="card">
+          </div>                    
+        </div>
+        <div class="info carddetails">
+          <label for="cardName">Card Name</label>
+          <input type="text" name="cardName" placeholder="Card Name" required>
+        </div>
+        <div class="info carddetails">
+          <label for="cardNum">Card Number</label>
+          <input type="number" name="cardNum" placeholder="1111-2222-3333-4444" required>
+        </div>
+        <div class="info carddetails">
+          <label for="expiaryDate">Expiary date</label>
+          <input type="text" name="expiaryDate" placeholder="01/25" required>
+        </div>
+        <div class="info carddetails">
+          <label for="cvv">CVV</label>
+          <input type="number" name="cvv" placeholder="123" required>
+        </div>
+      </form>
+      <div id="paydiv">
+        <div>
+          <span>Total Quantity:</span>
+          <span id="showTotalQnty">Rs. 0.00</span>
+        </div>
+        <div>
+          <span>Total Price:</span>
+          <span id="showTotalPrice">Rs. 0.00</span>
+        </div>
+        <button id="paybtn" type="submit">Pay</button>
+      </div>
+    </div>
+    <!--Js rendered HTML goes here-->
+    <div id="checkoutbox">
+      <h1>Products in <span>Cart</span></h1>
+      <div class="heading">
+        <span>Product</span>
+        <span>Price</span>
+        <span>Quantity</span>
+        <span>SubTotal</span>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div id="footercontainer">
+      <div class="col1">
+        <a href="./index.html" class="brand">Care Corner</a>
+        <ul class="mediaicons">
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-whatsapp"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul class="menu">
+          <li><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Doctors</a></li>
+          <li><a>Reservation</a></li>
+          <li><a>Pharmacy</a></li>
+          <li><a>About Us</a></li>
+          <li><a>contact Us</a></li>
+        </ul>
+        <p>Care Corner Hospital. Providing compassionate care in Colombo and Kandy. Your health is our priority.</p>
+      </div>
+      <div class="col3">
+        <h3>Newsletter</h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">&copy; 2024 Care Corner. All rights reserved.</p>
+  </footer> 
+
+  <script src="./checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "name": "Azithromycin",
+        "category": "Antibiotics",
+        "price": "250",
+        "image": "./images/azithromycin.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Doxycycline",
+        "category": "Antibiotics",
+        "price": "300",
+        "image": "./images/Doxycycline.png"
+    },
+    {
+        "id": 3,
+        "name": "Amoxicillin",
+        "category": "Antibiotics",
+        "price": "200",
+        "image": "./images/amoxicillin.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Cephalexin",
+        "category": "Antibiotics",
+        "price": "350",
+        "image": "./images/cephalexin.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Ciprofloxacin",
+        "category": "Antibiotics",
+        "price": "400",
+        "image": "./images/Ciprofloxacin.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Metronidazole",
+        "category": "Antibiotics",
+        "price": "450",
+        "image": "./images/Metronidazole.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Paracetamol",
+        "category": "Analgesics",
+        "price": "150",
+        "image": "./images/Paracetamol.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Ibuprofen",
+        "category": "Analgesics",
+        "price": "200",
+        "image": "./images/Ibuprofen.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Aspirin",
+        "category": "Analgesics",
+        "price": "180",
+        "image": "./images/aspirin.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Indomethacin",
+        "category": "Analgesics",
+        "price": "550",
+        "image": "./images/indomethacin.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Codeine",
+        "category": "Analgesics",
+        "price": "450",
+        "image": "./images/codeine.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Tramadol",
+        "category": "Analgesics",
+        "price": "350",
+        "image": "./images/Tramadol.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Fluoxetine",
+        "category": "Antidepressants",
+        "price": "300",
+        "image": "./images/Fluoxetine.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Sertraline",
+        "category": "Antidepressants",
+        "price": "320",
+        "image": "./images/Sertraline.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Citalopram",
+        "category": "Antidepressants",
+        "price": "280",
+        "image": "./images/citalopram.jpg"
+    },
+    { 
+        "id": 16,
+        "name": "Escitalopram",
+        "category": "Antidepressants",
+        "price": "350",
+        "image": "./images/excitalopram.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Amitriptyline",
+        "category": "Antidepressants",
+        "price": "400",
+        "image": "./images/Amitriptyline.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Bupropion",
+        "category": "Antidepressants",
+        "price": "450",
+        "image": "./images/bupropion.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Doxylamine",
+        "category": "Antihistamines",
+        "price": "120",
+        "image": "./images/doxylamine.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Cetirizine",
+        "category": "Antihistamines",
+        "price": "180",
+        "image": "./images/cetirizine.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Loratadine",
+        "category": "Antihistamines",
+        "price": "150",
+        "image": "./images/loratadine.jpg"
+    },
+    {
+        "id": 22,
+        "name": "Fexofenadine",
+        "category": "Antihistamines",
+        "price": "200",
+        "image": "./images/fexofenadine.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Chlor pheniramine",
+        "category": "Antihistamines",
+        "price": "220",
+        "image": "./images/chlorpheniramine.jpg"
+    },
+    {
+        "id": 24,
+        "name": "Desloratadine",
+        "category": "Antihistamines",
+        "price": "250",
+        "image": "./images/desloratadine.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Lisinopril",
+        "category": "Antihypertensives",
+        "price": "250",
+        "image": "./images/lisinopril.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Amlodipine",
+        "category": "Antihypertensives",
+        "price": "300",
+        "image": "./images/amlodipine.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Losartan",
+        "category": "Antihypertensives",
+        "price": "350",
+        "image": "./images/losartan.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Hydro chlorothiazide",
+        "category": "Antihypertensives",
+        "price": "270",
+        "image": "./images/hydrochlorothiazide.jpg"
+    },
+    {
+        "id": 29,
+        "name": "Enalapril",
+        "category": "Antihypertensives",
+        "price": "320",
+        "image": "./images/enapril.jpg"
+    },
+    {
+        "id": 30,
+        "name": "Clonidine",
+        "category": "Antihypertensives",
+        "price": "380",
+        "image": "./images/clonidine.jpg"
+    }
+]
